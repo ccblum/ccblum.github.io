@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="." />
+    <title>Teaching - Christian Blum, PhD</title>
+   
+    <script src='https://cdn.tailwindcss.com/3.4.16'></script>
+    <link href='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">CB</span>
+                    </div>
+                    <a href="index.html" class="font-semibold text-gray-900">Christian Blum</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="research.html" class="text-gray-700 hover:text-blue-600 transition-colors">Research</a>
+                    <a href="teaching.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 transition-colors">Teaching</a>
+                    <a href="publications.html" class="text-gray-700 hover:text-blue-600 transition-colors">Journal Publications</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition-colors">Gallery</a>
+		    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">Contact me</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="research.html" class="block py-2 text-gray-700">Research</a>
+                <a href="teaching.html" class="block py-2 text-blue-600 font-semibold">Teaching</a>
+                <a href="publications.html" class="block py-2 text-gray-700">Journal Publications</a>
+                <a href="gallery.html" class="block py-2 text-gray-700">Gallery</a>
+		<a href="contact.html" class="block py-2 text-gray-700">Contact me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Page Header -->
+            <header class="text-center mb-12" data-aos="fade-up">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900">Teaching & Supervision</h1>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">Sharing knowledge in metaheuristics and guiding the next generation of researchers.</p>
+            </header>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+
+                <!-- Left Sidebar -->
+                <aside class="lg:w-1/4 space-y-8" data-aos="fade-right">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                         <h2 class="text-xl font-bold text-gray-900 mb-4">Menu</h2>
+                         <ul class="space-y-2">
+                             <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Home</a></li>
+                             <li><a href="research.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Research</a></li>
+                             <li><a href="teaching.html" class="text-blue-600 font-semibold block">Teaching</a></li>
+                             <li><a href="publications.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Journal Publications</a></li>
+                             <li><a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Gallery</a></li>
+			     <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Contact me</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <img name="cblum" src="./images/cblum-2017-small.png" width="100" class="rounded-full mx-auto mb-4 border-4 border-blue-100" alt="Christian Blum">
+                        <div class="space-y-4">
+                            <a href="https://orcid.org/0000-0002-1736-3559" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm text-gray-700 hover:text-green-600 transition-colors">
+                                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" class="w-4 h-4 mr-2" alt="ORCID iD icon">
+                                <span>ORCID Profile</span>
+                            </a>
+                            <a target="_blank" href="./downloads/cblum_cv.pdf" class="flex items-center text-sm text-gray-700 hover:text-red-600 transition-colors">
+                                <i class="fas fa-file-pdf w-4 text-center mr-2 text-red-500"></i>
+                                <span>Download CV</span>
+                            </a>
+                            <a target="_blank" href="http://dblp.uni-trier.de/pers/hd/b/Blum_0001:Christian" class="flex items-center text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                               <i class="fas fa-database w-4 text-center mr-2 text-blue-500"></i>
+                                <span>DBLP Entries</span>
+                            </a>
+                            <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="flex items-center text-sm text-gray-700 hover:text-yellow-600 transition-colors">
+                                <i class="fab fa-google w-4 text-center mr-2 text-yellow-500"></i>
+                                <span>Google Scholar</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right Content Area -->
+                <div class="lg:w-3/4" data-aos="fade-left" data-aos-delay="200">
+                    <article class="bg-white p-8 rounded-2xl shadow-lg space-y-8">
+                        
+ <!-- Current PhD Students -->
+<!--<div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 class="text-4xl lg:text-3xl font-bold text-gray-900">Current PhD Students</h3>-->
+<section>
+  <h2 class="text-2xl font-bold text-gray-900 mb-4">Current PhD Students</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-6">
+    <!-- Loop of images -->
+    <div class="rounded-xl overflow-hidden shadow-md bg-gray-50 border-4 border-gray-300">
+      <a href="https://scholar.google.com/citations?user=Y5ssm7AAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+        <img src="./images/guillem.jpg" alt="Guillem" class="w-full h-30 object-cover cursor-pointer">
+      </a>
+      <div class="p-4">
+        <h4 class="font-semibold text-sm">Guillem Rodríguez Corominas</h4>
+        <p class="text-sm text-gray-600 mt-1">Starting date: October 2022</p>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden shadow-md bg-gray-50 border-4 border-gray-300">
+      <a href="https://iiia.csic.es/people/person/?person_id=173" target="_blank" rel="noopener noreferrer">
+        <img src="./images/rocco.jpg" alt="Rocco" class="w-full h-30 object-cover cursor-pointer">
+      </a>
+      <div class="p-4">
+        <h4 class="font-semibold text-sm">Rocco Ballester Benito</h4>
+        <p class="text-sm text-gray-600 mt-1">Starting date: October 2023</p>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden shadow-md bg-gray-50 border-4 border-gray-300">
+      <a href="https://vpramon.github.io/" target="_blank" rel="noopener noreferrer">
+        <img src="./images/ramon_valles.png" alt="Ramon" class="w-full h-30 object-cover cursor-pointer">
+      </a>
+      <div class="p-4">
+        <h4 class="font-semibold text-sm">Ramon Vallés Puig</h4>
+        <p class="text-sm text-gray-600 mt-1">Starting date: October 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="text-2xl font-bold text-gray-900 mb-4">Recent Ex PhD Students</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-6">
+    <!-- Loop of images -->
+    <div class="rounded-xl overflow-hidden shadow-md bg-gray-50 border-4 border-gray-300">
+      <a href="https://scholar.google.com/citations?user=fkltS0wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+        <img src="./images/jaume.jpeg" alt="Jaume" class="w-full h-30 object-cover cursor-pointer">
+      </a>
+      <div class="p-4">
+        <h4 class="font-semibold text-sm">Jaume Reixach i Pérez</h4>
+        <p class="text-sm text-gray-600 mt-1">Defense: January 2026</p>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden shadow-md bg-gray-50 border-4 border-gray-300">
+      <a href="https://icn2.cat/en/staff-directory?member=2682" target="_blank" rel="noopener noreferrer">
+        <img src="./images/camilo.jpeg" alt="Camilo" class="w-full h-30 object-cover cursor-pointer">
+      </a>
+      <div class="p-4">
+        <h4 class="font-semibold text-sm">Camilo Chacón Sartori</h4>
+        <p class="text-sm text-gray-600 mt-1">Defense: December 2025</p>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden shadow-md bg-gray-50 border-4 border-gray-300">
+      <a href="https://scholar.google.com/citations?user=jFdO2TIAAAAJ&hl=tr" target="_blank" rel="noopener noreferrer">
+        <img src="./images/mehmet.jpeg" alt="Mehmet" class="w-full h-30 object-cover cursor-pointer">
+      </a>
+      <div class="p-4">
+	      <h4 class="font-semibold text-sm">Mehmet Anil Akbay</h4>
+        <p class="text-sm text-gray-600 mt-1">Defense: September 2024</p>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden shadow-md bg-gray-50 border-4 border-gray-300">
+      <a href="https://scholar.google.com/citations?user=aSzun-sAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+        <img src="./images/teddy.jpeg" alt="Teddy" class="w-full h-30 object-cover cursor-pointer">
+      </a>
+      <div class="p-4">
+              <h4 class="font-semibold text-sm">Teddy Nurcahyadi</h4>
+        <p class="text-sm text-gray-600 mt-1">Defense: September 2022</p>
+      </div>
+    </div>
+</div> 
+</section>
+
+
+
+                       <!-- Current Teaching -->
+                        <section>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Current Teaching</h2>
+                            <p class="text-gray-700 leading-relaxed">Due to my current post as Senior Research Scientist, I am not giving classes on a regular basis. In one of my previous posts as associate professor at the <a href="http://www.upc.edu" target="_blank" class="text-blue-600 hover:underline">Universitat Politècnica de Catalunya</a> (Barcelona, Spain), I had the normal teaching load of a Spanish university professor.</p>
+                        </section>
+
+                        <!-- Courses -->
+                        <section>
+                             <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Courses on Metaheuristics and Hybrids</h2>
+			     <p class="text-gray-700 leading-relaxed mb-4">Occasionally, I give courses of 20-40 hours on metaheuristics and hybrid techniques for optimization (in English or Spanish). The last course in Spanish took place at the <a target="_blank" href="https://www.ucuenca.edu.ec/" class="text-blue-600 hover:underline">University of Cuenca</a>, Ecuador, October 2021. And the last one in English took place at the <a target="_blank" href="https://vgsco.univie.ac.at/" class="text-blue-600 hover:underline">Vienna Graduate School on Computational Optimization</a>, Austria, March 2022.</p>
+                            <div class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Example Course: Vienna Graduate School on Computational Optimization</h3>
+                                <p class="text-gray-600 mb-4">Below is a description and sample slides from a representative course given in 2022:</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-info-circle text-blue-500 mt-1 mr-3"></i>
+                                        <a target="_blank" href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?locale=en&windowId=817&courseNr=186860&semester=2017S" class="text-blue-600 hover:underline">Course Description (Vienna)</a>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-file-powerpoint text-red-500 mt-1 mr-3"></i>
+                                        <div>
+                                            <a target="_blank" href="./downloads/swarm_intelligence_slides.pdf" class="text-blue-600 hover:underline">Sample Slides on Swarm Intelligence</a>
+                                            <p class="text-sm text-gray-500 mt-1">The course material comprises about 600 slides. When the course is given in Spanish, slides are also in Spanish.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Award -->
+                        <section>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Award for Student Supervision</h2>
+                            <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-lg flex items-center gap-6">
+                                <div class="text-5xl text-yellow-500">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 leading-relaxed">In November 2012, I received a student supervision award because my ex-student <a target="_blank" href="https://www.linkedin.com/in/sergi-mateo-bellido?originalSubdomain=es" class="text-blue-600 hover:underline font-semibold">Sergi Mateo Bellido</a> won the first prize at the <a target="_blank" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2012-15553" class="text-blue-600 hover:underline font-semibold">Certamen Arquímedes 2012</a>, awarded for the best Master's thesis in Spain.</p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Christian Blum, PhD</h3>
+                    <p class="text-gray-400 mb-4">Senior Research Scientist at IIIA-CSIC, specializing in artificial intelligence, metaheuristics, and optimization algorithms.</p>
+                    <div class="flex space-x-4">
+                        <a target="_blank" href="https://orcid.org/0000-0002-1736-3559" class="text-gray-400 hover:text-green-400 transition-colors"><i class="fab fa-orcid text-xl"></i></a>
+                        <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-google text-xl"></i></a>
+                        <a target="_blank" href="https://www.researchgate.net/profile/Christian_Blum?cp=shp" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-researchgate text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="research.html" class="text-gray-400 hover:text-white transition-colors">Research</a></li>
+                        <li><a href="publications.html" class="text-gray-400 hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="teaching.html" class="text-gray-400 hover:text-white transition-colors">Teaching</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Institution</h4>
+                    <p class="text-gray-400">
+                        Artificial Intelligence Research Institute (IIIA)<br>
+                        Spanish National Research Council (CSIC)<br>
+                        Barcelona, Spain
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-500">&copy; 2024 Christian Blum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>

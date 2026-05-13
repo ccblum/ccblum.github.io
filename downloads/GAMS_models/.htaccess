@@ -1,0 +1,4 @@
+AuthName "GAMS Models"
+AuthType Basic
+AuthUserFile /home/christian.blum/.htpasswd
+require valid-user 

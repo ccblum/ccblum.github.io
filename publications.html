@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="." />
+    <title>Journal Publications - Christian Blum, PhD</title>
+    
+    <script src='https://cdn.tailwindcss.com/3.4.16'></script>
+    <link href='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' />
+    <style>
+      .d1 {
+        color: #d4af37;       /* gold tone */
+        font-weight: bold;
+        font-size: 1.8em;
+        cursor: help;
+      }
+      .q-badge {
+        display: inline-block;
+        background: #eee;
+        border-radius: 8px;
+        padding: 2px 8px;
+        margin-right: 4px;
+      }
+      .q1 { background: #90EE90; }  /* greenish */
+      .q2 { background: #ADD8E6; }
+      .q3 { background: #FFFACD; }
+      .q4 { background: #ffcdd2; }
+      .sd1 { background: gold; }
+
+       
+      #publications-container a {
+        position: relative;
+      }
+
+      #publications-container a:hover::after {
+        content: attr(data-citations);
+        position: absolute;
+        top: -2em;
+        left: 0;
+        background: #333;
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 0.85em;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0.9;
+        transform: translateY(-5px);
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">CB</span>
+                    </div>
+                    <a href="index.html" class="font-semibold text-gray-900">Christian Blum</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="research.html" class="text-gray-700 hover:text-blue-600 transition-colors">Research</a>
+                    <a href="teaching.html" class="text-gray-700 hover:text-blue-600 transition-colors">Teaching</a>
+                    <a href="publications.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 transition-colors">Journal Publications</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition-colors">Gallery</a>
+		    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">Contact me</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="research.html" class="block py-2 text-gray-700">Research</a>
+                <a href="teaching.html" class="block py-2 text-gray-700">Teaching</a>
+                <a href="publications.html" class="block py-2 text-blue-600 font-semibold">Journal Publications</a>
+                <a href="gallery.html" class="block py-2 text-gray-700">Gallery</a>
+		<a href="contact.html" class="block py-2 text-gray-700">Contact me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Page Header -->
+            <header class="text-center mb-12" data-aos="fade-up">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900">Journal Publications</h1>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">A comprehensive list of my contributions to scientific journals.</p>
+            </header>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+
+                <!-- Left Sidebar -->
+                <aside class="lg:w-1/4 space-y-8 lg:sticky top-24 self-start" data-aos="fade-right">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                         <h2 class="text-xl font-bold text-gray-900 mb-4">Menu</h2>
+                         <ul class="space-y-2">
+                             <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Home</a></li>
+                             <li><a href="research.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Research</a></li>
+                             <li><a href="teaching.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Teaching</a></li>
+                             <li><a href="publications.html" class="text-blue-600 font-semibold block">Journal Publications</a></li>
+                             <li><a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Gallery</a></li>
+			     <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Contact me</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <img name="cblum" src="./images/cblum-2017-small.png" width="100" class="rounded-full mx-auto mb-4 border-4 border-blue-100" alt="Christian Blum">
+                        <div class="space-y-4">
+                            <a href="https://orcid.org/0000-0002-1736-3559" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm text-gray-700 hover:text-green-600 transition-colors">
+                                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" class="w-4 h-4 mr-2" alt="ORCID iD icon">
+                                <span>ORCID Profile</span>
+                            </a>
+                            <a target="_blank" href="./downloads/cblum_cv.pdf" class="flex items-center text-sm text-gray-700 hover:text-red-600 transition-colors">
+                                <i class="fas fa-file-pdf w-4 text-center mr-2 text-red-500"></i>
+                                <span>Download CV</span>
+                            </a>
+                            <a target="_blank" href="http://dblp.uni-trier.de/pers/hd/b/Blum_0001:Christian" class="flex items-center text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                               <i class="fas fa-database w-4 text-center mr-2 text-blue-500"></i>
+                                <span>DBLP Entries</span>
+                            </a>
+                            <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="flex items-center text-sm text-gray-700 hover:text-yellow-600 transition-colors">
+                                <i class="fab fa-google w-4 text-center mr-2 text-yellow-500"></i>
+                                <span>Google Scholar</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right Content Area -->
+                <div class="lg:w-3/4" data-aos="fade-left" data-aos-delay="200">
+                    <article class="space-y-12" id="publications-container">
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-r-lg" role="alert">
+                            <p class="font-bold">Note</p>
+                            <p>This page only displays journal publications. A more complete publication list, including publications in conference proceedings, can be obtained at <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="font-semibold underline hover:text-blue-600">Google Scholar</A> or from <a target="_blank" href="http://dblp.uni-trier.de/pers/hd/b/Blum_0001:Christian" class="font-semibold underline hover:text-blue-600">DBLP</A>.</p>
+                        </div>
+                        <div id="quartile-summary" style="font-size:1.1em; font-weight:500; margin-bottom:1em;"></div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Data for all years
+        const allPublications = {
+            'In press': [
+                 { id: '101', authors: 'J. Reixach, C. Blum', title: 'How to improve "Construct, Merge, Solve and Adapt"? Use Reinforcement Learning!', link: 'https://doi.org/10.1007/s10479-024-06243-7', journal: 'Annals of Operations Research', details: '2024. In press', jcr: 'JCR, Q1, IF: 4.5' }
+            ],
+            '2026': [
+                 { id: '100', authors: 'G. Rodriguez Corominas, M.J. Blesa, C. Blum', title: 'FastKPP: An exact accelerated k-means++ algorithm', link: 'https://doi.org/10.1016/j.simpa.2026.100830', journal: 'Software Impacts', details: 'article number 100830, 2026', jcr: 'JCR, Q4, IF: 1.2' },
+                { id: '99', authors: 'C. Chacon Sartori, C. Blum', title: 'Combinatorial Optimization for All: Using LLMs to Aid Non-Experts in Improving Optimization Algorithms Authors', link: 'https://journal.iberamia.org/index.php/intartif/article/view/2584', journal: 'Inteligencia Artificial', details: '29(77):108-132, 2026', jcr: 'JCR, Q2, IF: 3.7' }
+            ],
+            '2025': [
+                { id: '98', authors: 'C. Blum', title: 'Construct, Merge, Solve and Adapt. Application to the Minimum Global Domination Problem', link: 'https://doi.org/10.1007/s11750-024-00689-5', journal: 'Transactions in Operations Research (TOP)', details: '33, pages 357-377, 2025', jcr: 'JCR, Q4, IF: 1.4' },
+                { id: '97', authors: 'M.A. Akbay, C. Blum', title: 'EVRPGen: A Web-Based Instance Generator for the Electric Vehicle Routing Problem with Road Junctions and Road Types', link: 'https://doi.org/10.1016/j.simpa.2025.100778', journal: 'Software Impacts', details: 'article number 100778, 2025', jcr: 'JCR, Q4, IF: 1.2' },
+                { id: '96', authors: 'C. Jimenez-Romero, A. Yegenoglu, C. Blum', title: 'Multi-Agent Systems Powered by Large Language Models: Applications in Swarm Intelligence', link: 'https://doi.org/10.3389/frai.2025.1593017', journal: 'Frontiers in Artificial Intelligence', details: '8, 2025', jcr: 'JCR, Q1, IF: 4.7' },
+                { id: '95', authors: 'M. Djukanovic, J. Reixach, T. Eftimov, A. Kartelj, G.R. Raidl, C. Blum', title: 'A Learning Search Algorithm for the Restricted Longest Common Subsequence Problem', link: 'https://doi.org/10.1016/j.eswa.2025.127731', journal: 'Expert Systems with Applications', details: '284, article number 127731, 2025', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 7.5' },
+                { id: '94', authors: 'G. Rodriguez Corominas, M.J. Blesa, C. Blum', title: 'Accelerating the k-means++ algorithm by using geometric information', link: 'https://doi.org/10.1109/ACCESS.2025.3561293', journal: 'IEEE Access', details: '13, pages 67693-67717, 2025', jcr: 'JCR, Q2, IF: 3.6' },
+                { id: '93', authors: 'G. Rodriguez Corominas, M.J. Blesa, C. Blum', title: 'SoftBinReduce: Data Reduction for Color Quantization through Soft Binning', link: 'https://doi.org/10.1007/s00530-025-01755-z', journal: 'Multimedia Systems', details: '31, article number 193, 2025', jcr: 'JCR, Q2, IF: 3.1' },
+                { id: '92', authors: 'M.A. Akbay, C. Blum', title: 'A Dataset for Two-Echelon Electric Vehicle Routing Problems', link: 'https://doi.org/10.1016/j.dib.2025.111470', journal: 'Data in Brief', details: '60, article number 111470, 2025', jcr: 'JCR, Q3, IF: 1.4' },
+                { id: '91', authors: 'J. Reixach, C. Blum, M. Djukanovic, G.R. Raidl', title: 'A Biased Random Key Genetic Algorithm for Solving the Longest Common Square Subsequence Problem', link: 'https://doi.org/10.1109/tevc.2024.3413150', journal: 'IEEE Transactions on Evolutionary Computation', details: '29(2), pages 390-403, 2025', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 12.0' },
+                { id: '90', authors: 'C. Chacon Sartori, C. Blum, F. Bistaffa', title: 'VisGraphVar: A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models', link: 'https://doi.org/10.1109/ACCESS.2025.3535837', journal: 'IEEE Access', details: '13, pages 21788-21810, 2025', jcr: 'JCR, Q2, IF: 3.6' },
+                { id: '89', authors: 'C. Chacon Sartori, C. Blum, F. Bistaffa, G. Rodriguez Corominas', title: 'Metaheuristics and Large Language Models Join Forces: Toward an Integrated Optimization Approach', link: 'https://doi.org/10.1109/ACCESS.2024.3524176', journal: 'IEEE Access', details: '13, pages 2058-2079, 2025', jcr: 'JCR, Q2, IF: 3.6' }
+            ],
+            '2024': [
+                { id: '88', authors: 'M.A. Akbay, C. Blum, C.B. Kalayci', title: 'CMSA Based on Set Covering Models for Packing and Routing Problems', link: 'https://doi.org/10.1007/s10479-024-06295-9', journal: 'Annals of Operations Research', details: '343, pages 1-38, 2024', jcr: 'JCR, Q1, IF: 4.5' },
+                { id: '87', authors: 'N. Nakhjiri, M. Salamo, M. Sanchez-Marre, C. Blum, J.C. Morales', title: 'Forgetful Swarm Optimization for Astronomical Observation Scheduling', link: 'https://doi.org/10.1109/ACCESS.2024.3492100', journal: 'IEEE Access', details: '12, pages 171644-171661, 2024', jcr: 'JCR, Q2, IF: 3.6' },
+                { id: '86', authors: 'C. Blum', title: 'Ant Colony Optimization: A Bibliometric Review', link: 'https://doi.org/10.1016/j.plrev.2024.09.014', journal: 'Physics of Life Reviews', details: '41, pages 87-95, 2024', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 14.3' },
+                { id: '85', authors: 'P. Pinacho Davidson, C. Blum, M.A. Pinninghoff, R. Contreras', title: 'Extension of CMSA with a Learning Mechanism: Application to the Far from Most String Problem', link: 'https://doi.org/10.1007/s44196-024-00488-7', journal: 'International Journal of Computational Intelligence Systems', details: '17, article number 109, 2024', jcr: 'JCR, Q2, IF: 3.0' },
+                { id: '84', authors: 'E.G. Morquecho, S.P. Torres, F. Astudillo-Salinas, H. Ergun, D. Van Hertem, C.A. Castro, C. Blum', title: 'Comparison of an Improved Metaheuristic and Mathematical Optimization Based Methods to Solve the Static AC TNEP Problem', link: 'https://doi.org/10.1109/TPWRS.2023.3305431', journal: 'IEEE Transactions on Power Systems', details: '39(2):3240-3256, 2024', jcr: 'JCR, Q1, IF: 7.2' },
+                { id: '83', authors: 'R.M. Rosati, S. Bouamama, C. Blum', title: 'Multi-constructor CMSA for the maximum disjoint dominating sets problem', link: 'https://doi.org/10.1016/j.cor.2023.106450', journal: 'Computers & Operations Research', details: '161, article number 106450, 2024', jcr: 'JCR, Q1, IF: 4.3' },
+                { id: '82', authors: 'D.R. Thiruvady, S. Nguyen, C. Blum, A. Ernst', title: 'An efficient merge search matheuristic for maximising net present value in project scheduling', link: 'https://doi.org/10.1504/IJOR.2024.141328', journal: 'International Journal of Operational Research', details: '51(1), 104-127, 2024', jcr: null }
+            ],
+            '2023': [
+                { id: '81', authors: 'M. Djukanovic, A. Kartelj, C. Blum', title: 'Self-adaptive CMSA for solving the multidimensional multi-way number partitioning problem', link: 'https://doi.org/10.1016/j.eswa.2023.120762', journal: 'Expert Systems with Applications', details: '232, article number 120762, 2023', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 7.5' },
+                { id: '80', authors: 'C. Chacon Sartori, C. Blum, G. Ochoa', title: 'STNWeb: A new visualization tool for analyzing optimization algorithms', link: 'https://doi.org/10.1016/j.simpa.2023.100558', journal: 'Software Impacts', details: '17, article number 100558, 2023', jcr: 'JCR, Q4, IF: 1.2' },
+                { id: '79', authors: 'G. Rodriguez Corominas, M.J. Blesa, C. Blum', title: 'AntNetAlign -- A software package for Network Alignment', link: 'https://doi.org/10.1016/j.simpa.2023.100476', journal: 'Software Impacts', details: '15, article number 100476, 2023', jcr: 'JCR, Q4, IF: 1.2' },
+                { id: '78', authors: 'G. Rodriguez Corominas, M.J. Blesa, C. Blum', title: 'AntNetAlign: Ant Colony Optimization for Network Alignment', link: 'https://doi.org/10.1016/j.asoc.2022.109832', journal: 'Applied Soft Computing', details: '132, article number 109832, 2023', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 7.2' }
+            ],
+            '2022': [
+                { id: '77', authors: 'C. Blum, A. Eremeev, Y. Zakharova', title: 'Hybridizations of Evolutionary Algorithms with Large Neighborhood Search', link: 'https://doi.org/10.1016/j.cosrev.2022.100512', journal: 'Computer Science Review', details: '46, article number 100512, 2022', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 12.9' },
+                { id: '76', authors: 'T. Nurcahyadi, C. Blum, F. Manya', title: 'Negative Learning Ant Colony Optimization for MaxSAT', link: 'https://doi.org/10.1007/s44196-022-00120-6', journal: 'International Journal of Computational Intelligence Systems', details: '15, article number 71, 2022', jcr: 'JCR, Q3, IF: 2.9' },
+                { id: '75', authors: 'M.A. Akbay, A. Lopez Serrano, C. Blum', title: 'A Self-Adaptive Variant of CMSA: Application to the Minimum Positive Influence Dominating Set Problem', link: 'https://doi.org/10.1007/s44196-022-00098-1', journal: 'International Journal of Computational Intelligence Systems', details: '15, article number 44, 2022', jcr: 'JCR, Q3, IF: 2.9' },
+                { id: '74', authors: 'M. Djukanović, A. Kartelj, D. Matić, M. Grbić, C. Blum, G.R. Raidl', title: 'Graph Search and Variable Neighborhood Search for Finding Longest Common Subsequences in Artificial and Real Gene Sequences', link: 'https://doi.org/10.1016/j.asoc.2022.108844', journal: 'Applied Soft Computing', details: 'article number 108844, 2022', jcr: 'JCR, Q1, IF: 8.7' },
+                { id: '73', authors: 'J. Perez, J.L. Flores, C. Blum, J. Cerquides, A. Abuin', title: 'Optimization Techniques and Formal Verification for the Software Design of Boolean Algebra Based Safety-Critical Systems', link: 'https://doi.org/10.1109/TII.2021.3074394', journal: 'IEEE Transactions on Industrial Informatics', details: '18(1), pages 620-630, 2022', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 12.3' },
+                { id: '72', authors: 'S. Bouamama, C. Blum, P. Pinacho-Davidson', title: 'A Population-Based Iterated Greedy Algorithm for Maximizing Sensor Network Lifetime', link: 'https://doi.org/10.3390/s22051804', journal: 'Sensors', details: '22(5), article number 1804, 2022', jcr: 'JCR, Q2, IF: 3.9' },
+                { id: '71', authors: 'M.A. Akbay, C.B. Kalayci, C. Blum, O. Polat', title: 'Variable Neighborhood Search for the Two-Echelon Electric Vehicle Routing Problem with Time Windows', link: 'https://doi.org/10.3390/app12031014', journal: 'Applied Sciences', details: '12(3), article number 1014, 2022', jcr: 'JCR, Q2, IF: 2.7' }
+            ],
+            '2021': [
+                { id: '70', authors: 'G. Ochoa, K. Malan, C. Blum', title: 'Search trajectories illuminated', link: 'https://doi.org/10.1145/3477379.3477381', journal: 'ACM SIGEVOlution', details: '14(2), pages 1-5, 2021', jcr: null },
+                { id: '69', authors: 'G. Ochoa, K. Malan, C. Blum', title: 'Search trajectory networks: A tool for analysing and visualising the behaviour of metaheuristics', link: 'https://doi.org/10.1016/j.asoc.2021.107492', journal: 'Applied Soft Computing', details: '109, article number 107492, 2021', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 8.263' },
+                { id: '68', authors: 'B. Nikolic, A. Kartelj, M. Djukanovic, M. Grbic, C. Blum, G.R. Raidl', title: 'Solving the Longest Common Subsequence Problem Concerning Non-Uniform Distributions of Letters in Input Strings', link: 'https://doi.org/10.3390/math9131515', journal: 'Mathematics', details: '9(13), article number 1515, 2021', jcr: 'JCR, Q2, IF: 2.921' },
+                { id: '67', authors: 'T. Nurcahyadi, C. Blum', title: 'Adding Negative Learning to Ant Colony Optimization:A Comprehensive Study', link: 'https://doi.org/10.3390/math9040361', journal: 'Mathematics', details: '9(4), article number 361, 2021', jcr: 'JCR, Q2, IF: 2.921' },
+                { id: '66', authors: 'F. Bistaffa, C. Blum, J. Cerquides, A. Farinelli, J.A. Rodríguez-Aguilar', title: 'A Computational Approach to Quantify the Benefits of Ridesharing for Policy Makers and Travellers', link: 'https://doi.org/10.1109/TITS.2019.2954982', journal: 'IEEE Transactions on Intelligent Transportation Systems', details: '22(1), 119-130, 2021', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 9.551' },
+                { id: '65', authors: 'M. Djukanovic, G.R. Raidl, C. Blum', title: 'An A* Search Algorithm for the Constrained Longest Common Subsequence Problem', link: 'https://doi.org/10.1016/j.ipl.2020.106041', journal: 'Information Processing Letters', details: '166, article number 106041, 2021', jcr: 'JCR, Q4, IF: 0.851' },
+                { id: '64', authors: 'C. Blum, G. Ochoa', title: 'A comparative analysis of two matheuristics by means of merged local optima networks', link: 'https://doi.org/10.1016/j.ejor.2020.08.008', journal: 'European Journal of Operational Research', details: '290(1), 36-56, 2021', jcr: 'JCR, Q1, IF: 6.363' },
+                { id: '63', authors: 'C. Blum, M. Djukanovic, A. Santini, H. Jiang, C.-M. Li, F. Manyà, G.R. Raidl', title: 'Solving longest common subsequence problems via a transformation to the maximum clique problem', link: 'https://doi.org/10.1016/j.cor.2020.105089', journal: 'Computers & Operations Research', details: '125, article number 105089, 2021', jcr: 'JCR, Q1, IF: 5.159' },
+                { id: '62', authors: 'S. Balbal, S. Bouamama, C. Blum', title: 'A Greedy Heuristic for Maximizing the Lifetime of Wireless Sensor Networks Based on Disjoint Weighted Dominating Sets', link: 'https://doi.org/10.3390/a14060170', journal: 'Algorithms', details: '14(6), article number 170, 2021', jcr: null },
+                { id: '61', authors: 'S. Bouamama, C. Blum', title: 'An Improved Greedy Heuristic for the Minimum Influence Dominating Set Problem in Social Networks', link: 'https://doi.org/10.3390/a14030079', journal: 'Algorithms', details: '14(3), article number 79, 2021', jcr: null }
+            ],
+            '2020': [
+                { id: '60', authors: 'P. Pinacho Davidson, C. Blum', title: 'BARRAKUDA: A Hybrid Evolutionary Algorithm for Minimum Capacitated Dominating Set Problem', link: 'https://doi.org/10.3390/math8111858', journal: 'Mathematics', details: '8(11), article number 1858, 2020', jcr: 'JCR, Q2, IF: 2.736' },
+                { id: '59', authors: 'M. Djukanovic, G.R. Raidl, C. Blum', title: 'Finding Longest Common Subsequences: New anytime A* search results', link: 'https://doi.org/10.1016/j.asoc.2020.106499', journal: 'Applied Soft Computing', details: '95, article number 106499, 2020', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 6.725' },
+                { id: '58', authors: 'C. Blum, M. Verdaguer, H. Monclús, M. Poch', title: 'A new optimization model for wastewater treatment planning with a temporal component', link: 'https://doi.org/10.1016/j.psep.2019.12.034', journal: 'Process Safety and Environmental Protection', details: '136:157-168, 2020', jcr: 'JCR, Q1, IF: 6.158' },
+                { id: '57', authors: 'M. Djukanovic, G.R. Raidl, C. Blum', title: 'Anytime Algorithms for the Longest Common Palindromic Subsequence Problem', link: 'https://doi.org/10.1016/j.cor.2019.104827', journal: 'Computers & Operations Research', details: '114, article number 104827, 2020', jcr: 'JCR, Q2, IF: 4.008' },
+                { id: '56', authors: 'C. Blum', title: 'Minimum Common String Partition: On Solving Large-Scale Problem Instances', link: 'https://doi.org/10.1111/itor.12603', journal: 'International Transactions in Operational Research', details: '27(1):91-111, 2020', jcr: 'JCR, Q2, IF: 4.193' },
+                { id: '55', authors: 'D. Thiruvady, C. Blum, A.T. Ernst', title: 'Solution Merging in Matheuristics for Resource Constrained Job Scheduling', link: 'https://doi.org/10.3390/a13100256', journal: 'Algorithms', details: '13(10), article number 256, 2020', jcr: null }
+            ],
+            '2019': [
+                { id: '54', authors: 'M. Horn, G.R. Raidl, C. Blum', title: 'Job Sequencing with One Common and Multiple Secondary Resources: An A*/Beam Search Based Anytime Algorithm', link: 'https://doi.org/10.1016/j.artint.2019.103173', journal: 'Artificial Intelligence', details: '277, article number 103173, 2019', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 6.628' },
+                { id: '53', authors: 'E. Andrejczuk, F. Bistaffa, C. Blum, J.A. Rodríguez-Aguilar, C. Sierra', title: 'Synergistic Team Composition: A Computational Approach to Foster Diversity in Teams', link: 'https://doi.org/10.1016/j.knosys.2019.06.007', journal: 'Knowledge-Based Systems', details: '182, article number 104799, 2019', jcr: 'JCR, Q1, IF: 5.921' },
+                { id: '52', authors: 'S. Bouamama, C. Blum, J.-G. Fages', title: 'An Algorithm Based on Ant Colony Optimization for the Minimum Connected Dominating Set Problem', link: 'https://doi.org/10.1016/j.asoc.2019.04.028', journal: 'Applied Soft Computing', details: '80:672-686, 2019', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 5.472' }
+            ],
+            '2018': [
+                { id: '51', authors: 'C. Blum, M.J. Blesa', title: 'A comprehensive comparison of metaheuristics for the repetition-free longest common subsequence problem', link: 'http://dx.doi.org/10.1007/s10732-017-9329-x', journal: 'Journal of Heuristics', details: '24(3):551-579, 2018', jcr: 'JCR, Q2, IF: 1.392' },
+                { id: '50', authors: 'C. Blum', title: 'ILP-Based Reduced Variable Neighborhood Search for Large-Scale Minimum Common String Partition', link: 'https://doi.org/10.1016/j.endm.2018.03.003', journal: 'Electronic Notes in Discrete Mathematics', details: '66:15-22, 2018', jcr: null },
+                { id: '49', authors: 'P. Pinacho, C. Blum, J.A. Lozano', title: 'The Weighted Independent Domination Problem: Integer Linear Programming Models and Metaheuristic Approaches', link: 'https://doi.org/10.1016/j.ejor.2017.08.044', journal: 'European Journal of Operational Research', details: '265(3):860-871, 2018', jcr: 'JCR, Q1, IF: 3.806' },
+                { id: '48', authors: 'C. Blum, M.J. Blesa', title: 'Hybrid Techniques Based on Solving Reduced Problem Instances for a Longest Common Subsequence Problem', link: 'https://doi.org/10.1016/j.asoc.2017.10.005', journal: 'Applied Soft Computing', details: '62:15-28, 2018', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 4.858' }
+            ],
+            '2017': [
+                { id: '47', authors: 'D. Chalupa, C. Blum', title: 'Mining k-Reachable Sets in Real-world Networks Using Domination in Shortcut Graphs', link: 'https://doi.org/10.1016/j.jocs.2017.07.012', journal: 'Journal of Computational Science', details: '22:1-14, 2017', jcr: 'JCR, Q2, IF: 1.925' },
+                { id: '46', authors: 'E. Lizarraga, M.J. Blesa, C. Blum, G.R. Raidl ', title: 'Large Neighborhood Search for the Most Strings With Few Bad Columns Problem', link: 'http://dx.doi.org/10.1007/s00500-016-2379-4', journal: 'Soft Computing', details: '21(17):4901-4915, 2017', jcr: 'JCR, Q2, IF: 2.367' }
+            ],
+            '2016': [
+                { id: '45', authors: 'S. Bouamama, C. Blum', title: 'A Hybrid Algorithmic Model for the Minimum Weight Dominating Set Problem', link: 'https://doi.org/10.1016/j.simpat.2015.11.001', journal: 'Simulation Modelling Practice and Theory', details: '64:57-68, 2016', jcr: 'JCR, Q2, IF: 1.954' },
+                { id: '44', authors: 'C. Blum, P. Pinacho, M. López-Ibáñez, J.A. Lozano', title: 'Construct, Merge, Solve & Adapt: A New General Algorithm For Combinatorial Optimization', link: 'https://doi.org/10.1016/j.cor.2015.10.014', journal: 'Computers & Operations Research', details: '68:75-88, 2016', jcr: 'JCR, Q1, IF: 2.6' },
+                { id: '43', authors: 'C. Blum, G.R. Raidl', title: 'Computational Performance Evaluation of Two Integer Linear Programming Models for the Minimum Common String Partition Problem', link: 'http://dx.doi.org/10.1007/s11590-015-0921-4', journal: 'Optimization Letters', details: '10(1):189-205, 2016', jcr: 'JCR, Q2, IF: 1.31' }
+            ],
+            '2015': [
+                { id: '42', authors: 'C. Blum, B. Calvo, M. J. Blesa', title: 'FrogCOL and FrogMIS: New Decentralized Algorithms for Finding Large Independent Sets in Graphs', link: 'http://dx.doi.org/10.1007/s11721-015-0110-1', journal: 'Swarm Intelligence', details: '9(2):205-227, 2015', jcr: 'JCR, Q1, IF: 2.159' },
+                { id: '41', authors: 'C. Blum, B. Calvo', title: 'A Matheuristic for the Minimmum Weight Rooted Arborescence Problem', link: 'http://dx.doi.org/10.1007/s10732-015-9286-1', journal: 'Journal of Heuristics', details: '21(4):479-399, 2015', jcr: 'JCR, Q2, IF: 1.344' },
+                { id: '40', authors: 'C. Blum, J.A. Lozano and P. Pinacho Davidson', title: 'An Artificial Bioindicator System for Network Intrusion Detection', link: 'http://dx.doi.org/10.1162/ARTL_a_00162', journal: 'Artificial Life', details: '21(2):93-118, 2015', jcr: 'JCR, Q2, IF: 1.042' },
+                { id: '39', authors: 'C. García-Martínez, C. Blum, F.J. Rodriguez, M. Lozano', title: 'The Firefighter Problem: Empirical Results on Random Graphs', link: 'http://dx.doi.org/10.1016/j.cor.2015.02.004', journal: 'Computers & Operations Research', details: '60, 55-66, 2015', jcr: 'JCR, Q1, IF: 1.988' },
+                { id: '38', authors: 'C. Blum, J.A. Lozano and P. Pinacho Davidson', title: 'Mathematical Programming Strategies for Solving the Minimum Common String Partition Problem', link: 'http://dx.doi.org/10.1016/j.ejor.2014.10.049', journal: 'European Journal of Operational Research', details: '242(3):769-777, 2015', jcr: 'JCR, Q1, IF: 2.679' }
+            ],
+            '2014': [
+                { id: '37', authors: 'H. Hernandez and C. Blum', title: 'FrogSim: Distributed Graph Coloring in Wireless Ad Hoc Networks -- An Algorithm Inspired by the Calling Behavior of Japanese Tree Frogs', link: 'http://dx.doi.org/10.1007/s11235-013-9776-0', journal: 'Telecommunication Systems', details: '55(2):211-223, 2014', jcr: 'JCR, Q3, IF: 0.705' }
+            ],
+            '2013': [
+                { id: '36', authors: 'M. López-Ibáñez, C. Blum, J.W. Ohlmann, B.W. Thomas', title: 'The Travelling Salesman Problem with Time Windows: Adapting Algorithms from Travel-time to Makespan Optimization', link: 'http://dx.doi.org/10.1016/j.asoc.2013.05.009', journal: 'Applied Soft Computing', details: '13(9):3806-3815, 2013', jcr: 'JCR, Q1, IF: 2.679' },
+                { id: '35', authors: 'F. J. Rodriguez, M. Lozano, C. Blum, C. García-Martínez', title: 'An Iterated Greedy Algorithm for the Large-Scale Unrelated Parallel Machines Scheduling Problem', link: 'http://dx.doi.org/10.1016/j.cor.2013.01.018', journal: 'Computers & Operations Research', details: '40(7):1829-1841, 2013', jcr: 'JCR, Q1, IF: 1.718' },
+                { id: '34', authors: 'P. J. Copado, G. Guillen and C. Blum', title: 'Large neighbourhood search applied to the efficient solution of spatially explicit strategic supply chain management problems', link: 'https://doi.org/10.1016/j.compchemeng.2012.09.006', journal: 'Computers & Chemical Engineering', details: '49(11):114-126, 2013', jcr: 'JCR, Q1, IF: 2.452' }
+            ],
+            '2012': [
+                { id: '33', authors: 'H. Hernandez and C. Blum', title: 'Distributed Ant Colony Optimization for Minimum Energy Broadcasting in Sensor Networks with Realistic Antennas', link: 'http://dx.doi.org/10.1016/j.camwa.2012.02.035', journal: 'Computers & Mathematics with Applications', details: '64(12):3683-3700, 2012', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 2.069' },
+                { id: '32', authors: 'F.J. Rodriguez, C. Blum, C. García-Martínez, M. Lozano', title: 'GRASP with path-relinking for the non-identical parallel machine scheduling problem with minimising total weighted completion times', link: 'https://doi.org/10.1007/s10479-012-1164-8', journal: 'Annals of Operations Research', details: '201(1):383-401, 2012', jcr: 'JCR, Q2, IF: 1.029' },
+                { id: '31', authors: 'H. Hernandez and C. Blum', title: 'Distributed Graph Coloring: An Approach Based on the Calling Behavior of Japanese Tree Frogs', link: 'https://doi.org/10.1007/s11721-012-0067-2', journal: 'Swarm Intelligence', details: '6(2):117-150, 2012', jcr: 'JCR, Q4, IF: 0.64' },
+                { id: '30', authors: 'S. Bouamama, C. Blum and A. Boukerram', title: 'A Population-Based Iterated Greedy Algorithm for the Minimum Weight Vertex Cover Problem', link: 'http://dx.doi.org/10.1016/j.asoc.2012.02.013', journal: 'Applied Soft Computing', details: '12(6):1632-1639, 2012', jcr: 'JCR, Q1, IF: 2.14' },
+                { id: '29', authors: 'V. Hemmelmayr, V. Schmid and C. Blum', title: 'Variable Neigbhourhood Search for the Variable Sized Bin Packing Problem', link: 'http://dx.doi.org/10.1016/j.cor.2011.07.003', journal: 'Computers & Operations Research', details: '39(5):1097-1108, 2012', jcr: 'JCR, Q1, IF: 1.909' },
+                { id: '28', authors: 'A. Roli, S. Benedettini, T. Stützle, C. Blum', title: 'Large Neighbourhood Search Algorithms for the Founder Sequence Reconstruction Problem', link: 'http://dx.doi.org/10.1016/j.cor.2011.03.012', journal: 'Computers & Operations Research', details: '39(2):213-224, 2012', jcr: 'JCR, Q1, IF: 1.909' }
+            ],
+            '2011': [
+                { id: '27', authors: 'C. Blum', title: 'Iterative Beam Search for Simple Assembly Line Balancing with a Fixed Number of Work Stations', link: 'https://raco.cat/index.php/SORT/article/view/248347', journal: 'Statistics and Operations Research Transactions', details: '35(2):145-164, 2011', jcr: 'JCR, Q4, IF: 0.429' },
+                { id: '26', authors: 'H. Hernandez and C. Blum', title: 'Minimum Energy Broadcasting in Wireless Sensor Networks: An Ant Colony Optimization Approach For a Realistic Antenna Model', link: 'http://dx.doi.org/10.1016/j.asoc.2011.03.023', journal: 'Applied Soft Computing', details: '11(8):5684-5694, 2011', jcr: 'JCR, Q1, IF: 2.612' },
+                { id: '25', authors: 'H. Hernandez and C. Blum', title: 'Foundations of ANTCYCLE: Self-Synchronized Duty-Cycling in Mobile Sensor Networks', link: 'http://dx.doi.org/10.1093/comjnl/bxq099', journal: 'The Computer Journal', details: '54(9):1427-1448, 2011', jcr: 'JCR, Q2, IF: 0.785' },
+                { id: '24', authors: 'E. Türetgen, G. González, C. Blum, P. Fua', title: 'Automated Reconstruction of Dendritic and Axonal Trees by Global Optimization with Geometric Priors', link: 'http://dx.doi.org/10.1007/s12021-011-9122-1', journal: 'Neuroinformatics', details: '9(2-3):279-302, 2011', jcr: 'JCR, Q1, IF: 2.973' },
+                { id: '23', authors: 'C. Blum, J. Puchinger, G.R. Raidl, A. Roli', title: 'Hybrid Metaheuristics in Combinatorial Optimization: A Survey', link: 'http://dx.doi.org/10.1016/j.asoc.2011.02.032', journal: 'Applied Soft Computing', details: '11(6):4135-4151, 2011', jcr: 'JCR, Q1, IF: 2.612' },
+                { id: '22', authors: 'C. Blum and C. Miralles', title: 'On solving the assembly line worker assignment and balancing problem via beam search', link: 'http://dx.doi.org/10.1016/j.cor.2010.05.008', journal: 'Computers & Operations Research', details: '38(1):328-339, 2011', jcr: 'JCR, Q1, IF: 1.72' }
+            ],
+            '2010': [
+                { id: '21', authors: 'M. Mastrolilli and C. Blum', title: 'On the use of different types of knowledge in metaheuristics based on constructing solutions', link: 'http://dx.doi.org/10.1016/j.engappai.2010.01.018', journal: 'Engineering Applications of Artificial Intelligence', details: '23(5):650-659, 2010', jcr: 'JCR, Q1, IF: 1.356' },
+                { id: '20', authors: 'M. Lopez and C. Blum', title: 'Beam-ACO for the travelling salesman problem with time windows', link: 'http://dx.doi.org/10.1016/j.cor.2009.11.015', journal: 'Computers & Operations Research', details: '37(9):1570-1583, 2010', jcr: 'JCR, Q1, IF: 1.769' }
+            ],
+            '2009': [
+                { id: '19', authors: 'H. Hernandez and C. Blum', title: 'Ant Colony Optimization for Multicasting in Wireless Ad Hoc Networks', link: 'https://doi.org/10.1007/s11721-009-0027-7', journal: 'Swarm Intelligence', details: '3(2):125-148, 2009', jcr: null },
+                { id: '18', authors: 'C. Blum, M. J. Blesa, and M. Lopez', title: 'Beam Search for the Longest Common Subsequence Problem', link: 'http://dx.doi.org/10.1016/j.cor.2009.02.005', journal: 'Computers & Operations Research', details: '36(12):3178-3186, 2009', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 2.116' }
+            ],
+            '2008': [
+                { id: '17', authors: 'C. Blum', title: 'Beam-ACO for simple assembly line balancing', link: 'https://doi.org/10.1287/ijoc.1080.0271', journal: 'INFORMS Journal on Computing', details: '20(4):618-627, 2008', jcr: 'JCR, Q2, IF: 1.041' },
+                { id: '16', authors: 'C. Blum, M. Yabar, and M. J. Blesa', title: 'An ant colony optimization algorithm for DNA sequencing by hybridization.', link: 'http://dx.doi.org/10.1016/j.cor.2007.03.007', journal: 'Computers & Operations Research', details: '35, 3620-3635, 2008', jcr: 'JCR, Q1, IF: 1.366' }
+            ],
+            '2007': [
+                { id: '15', authors: 'M.J. Blesa and C. Blum', title: 'Finding edge-dijoint paths in networks be means of artificial ant colonies.', link: 'http://dx.doi.org/10.1007/s10852-007-9060-y', journal: 'Journal of Mathematical Modelling and Algorithms', details: '6(3):361-391, 2007', jcr: null },
+                { id: '14', authors: 'K. Socha, and C. Blum', title: 'An ant colony optimization algorithm for continuous optimization: An application to feed-forward neural network training.', link: 'http://dx.doi.org/10.1007/s00521-007-0084-z', journal: 'Neural Computing & Applications', details: '16(3):235-248, 2007', jcr: 'JCR, Q3, IF: 0.627' },
+                { id: '13', authors: 'C. Blum', title: 'Revisiting dynamic programming for finding optimal subtrees in trees', link: 'http://dx.doi.org/10.1016/j.ejor.2005.11.005', journal: 'European Journal of Operational Research', details: '177(1):102-115, 2007', jcr: 'JCR, Q1, IF: 1.096' },
+                { id: '12', authors: 'C. Blum', title: 'Iterated local search and constructive heuristics for error correcting code design.', link: 'https://doi.org/10.1504/IJICA.2007.013398', journal: 'International Journal of Innovative Computing and Applications', details: '1(1):14-22, 2007', jcr: null }
+            ],
+            '2005': [
+                { id: '11', authors: 'D. Merkle and C. Blum', title: 'Swarm Intelligence -- An optimization-based introduction', link: 'https://dblp.org/rec/journals/ki/X05s', journal: 'Künstliche Intelligenz', details: '4:5-10, 2005', jcr: null },
+                { id: '10', authors: 'C. Blum', title: 'Beam-ACO---Hybridizing ant colony optimization with beam search: An application to open shop scheduling', link: 'http://dx.doi.org/10.1016/j.cor.2003.11.018', journal: 'Computers & Operations Research', details: '32(6):1565-1591, 2005', jcr: 'JCR, Q2, IF: 0.746' },
+                { id: '09', authors: 'C. Blum and M.J. Blesa', title: 'New metaheuristic approaches for the edge-weighted k-cardinality tree problem', link: 'http://dx.doi.org/10.1016/j.cor.2003.11.007', journal: 'Computers & Operations Research', details: '32(6):1355-1377, 2005', jcr: 'JCR, Q2, IF: 0.746' },
+                { id: '08', authors: 'C. Blum and M. Dorigo', title: 'Search bias in ant colony optimization: On the role of competition-balanced systems', link: 'https://doi.org/10.1109/TEVC.2004.841688', journal: 'IEEE Transactions on Evolutionary Computation', details: '9(2):159-174, 2005', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 3.257' },
+                { id: '07', authors: 'C. Blum', title: 'Ant colony optimization: Introduction and recent trends.', link: 'http://dx.doi.org/10.1016/j.plrev.2005.10.001', journal: 'Physics of Life Reviews', details: '2(4):353-373, 2005', jcr: null },
+                { id: '06', authors: 'M. Dorigo and C. Blum', title: 'Ant colony optimization theory: A survey.', link: 'http://dx.doi.org/10.1016/j.tcs.2005.05.020', journal: 'Theoretical Computer Science', details: '344(2-3):243-278, 2005', jcr: 'JCR, Q3, IF: 0.743'  }
+            ],
+            '2004': [
+                { id: '05', authors: 'C. Blum and M. Dorigo', title: 'The hyper-cube framework for ant colony optimization', link: 'https://doi.org/10.1109/TSMCB.2003.821450', journal: 'IEEE Transactions on Systems, Man, and Cybernetics -- Part B', details: '34(2):1161-1172, 2004', jcr: 'JCR, Q1, IF: 1.052' },
+                { id: '04', authors: 'C. Blum and M. Sampels', title: 'An ant colony optimization algorithm for shop scheduling problems', link: 'http://dx.doi.org/10.1023/B:JMMA.0000038614.39977.6f', journal: 'Journal of Mathematical Modelling and Algorithms', details: '3(3):285-308, 2004', jcr: null }
+            ],
+            '2003': [
+                { id: '03', authors: 'C. Blum and M. Ehrgott', title: 'Local search algorithms for the k-cardinality tree problem', link: 'http://dx.doi.org/10.1016/S0166-218X(02)00548-6', journal: 'Discrete Applied Mathematics', details: '128:511-540, 2003', jcr: 'JCR, Q3, IF: 0.503' },
+                { id: '02', authors: 'C. Blum and A. Roli', title: 'Metaheuristics in combinatorial optimization: Overview and conceptual comparison', link: 'https://doi.org/10.1145/937503.937505', journal: 'ACM Computing Surveys', details: '35(3):268-308, 2003', jcr: 'JCR, Q1<span class="d1" title="D1: Top 10% in category">★</span>, IF: 7.5' }
+            ],
+            '1998': [
+                { id: '01', authors: 'J. Rahmel, C. Blum, and P. Hahn', title: 'Diagnosis of finger dysfunction caused by ulnar nerve lesions', link: 'http://dx.doi.org/10.1515/JISYS.1998.8.1-2.163', journal: 'Journal of Intelligent Systems', details: '8(1/2), 1998', jcr: null }
+            ]
+        };
+
+        // Helper functions
+        function getImpactBadge(q, impact) {
+            if (!q || !impact) return '';
+            let colorClasses = 'bg-gray-100 text-gray-800';
+            if (q.includes('Q1')) colorClasses = 'bg-green-100 text-green-800';
+            else if (q.includes('Q2')) colorClasses = 'bg-blue-100 text-blue-800';
+            else if (q.includes('Q3')) colorClasses = 'bg-yellow-100 text-yellow-800';
+            else if (q.includes('Q4')) colorClasses = 'bg-red-100 text-red-800';
+            else if (q.includes('no quartile')) colorClasses = 'bg-gray-100 text-gray-800';
+            return `<span class="inline-block ${colorClasses} text-xs font-semibold mt-2 px-2.5 py-0.5 rounded-full whitespace-nowrap">${q}, IF: ${impact}</span>`;
+        }
+
+        function createPublicationEntry(id, authors, title, link, journal, details, jcr) {
+            const [q, impact] = jcr ? jcr.split(', IF: ') : [null, null];
+            const impactBadge = getImpactBadge(q, impact);
+            return `
+            <div class="bg-white p-4 rounded-lg border border-gray-200 transition-shadow hover:shadow-md">
+                <div class="flex items-start gap-4">
+                    <span class="bg-gray-700 text-white text-sm font-bold w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-md mt-1">${id.toString().padStart(2, '0')}</span>
+                    <div>
+                        <p class="text-gray-800 leading-relaxed">
+                            ${authors}.
+                            <a href="${link}" target="_blank" class="font-semibold text-blue-700 hover:underline">${title}</a>
+                            <em class="block text-gray-600 text-sm mt-1">${journal}, ${details}.</em>
+                        </p>
+                        ${impactBadge}
+                    </div>
+                </div>
+            </div>`;
+        }
+        
+        // Render all publications
+        document.addEventListener('DOMContentLoaded', async () => {
+            const container = document.getElementById('publications-container');
+            if (!container) return;
+
+            const years = Object.keys(allPublications).reverse(); // Show latest years first
+            
+            for (const year of years) {
+                const section = document.createElement('section');
+                section.id = year.toLowerCase().replace(' ', '-');
+                
+                const title = document.createElement('h2');
+                title.className = 'text-3xl font-bold text-gray-900 mb-6 border-b pb-3';
+                title.textContent = year;
+                section.appendChild(title);
+
+                const listContainer = document.createElement('div');
+                listContainer.className = 'space-y-4';
+                
+                allPublications[year].forEach(p => {
+                    listContainer.innerHTML += createPublicationEntry(p.id, p.authors, p.title, p.link, p.journal, p.details, p.jcr);
+                });
+
+                section.appendChild(listContainer);
+                container.appendChild(section);
+            }
+            
+            await addCitationHoverTooltips();
+        });
+
+        async function fetchCitations(doi) {
+          const url = `https://api.openalex.org/works/https://doi.org/${encodeURIComponent(doi)}`;
+          try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error("OpenAlex request failed");
+            const data = await response.json();
+            return data.cited_by_count || 0;
+          } catch (err) {
+            console.warn("Citation fetch failed for", doi, err);
+            return null;
+          }
+        }
+
+        async function addCitationHoverTooltips() {
+          const links = document.querySelectorAll('#publications-container a[href*="doi.org"]');
+          for (const link of links) {
+            const doiMatch = link.href.match(/10\.\d{4,9}\/[-._;()/:A-Z0-9]+/i);
+            if (!doiMatch) continue;
+            const doi = doiMatch[0];
+            const count = await fetchCitations(doi);
+            if (count !== null) {
+              link.setAttribute('data-citations', `Cited by ${count} papers (OpenAlex)`);
+            } else {
+              link.setAttribute('data-citations', 'Citation data unavailable');
+            }
+          }
+        }
+
+    </script>
+    
+<script>
+    function summarizeQuartiles(publications) {
+        const counts = { D1: 0, Q1: 0, Q2: 0, Q3: 0, Q4: 0 };
+        
+        // Loop over all years and publications
+        for (const year in publications) {
+            for (const pub of publications[year]) {
+                if (!pub.jcr) continue;
+
+                // Detect quartile (Q1, Q2, Q3, Q4)
+                const quartileMatch = pub.jcr.match(/Q[1-4]/);
+                if (quartileMatch) {
+                    const q = quartileMatch[0];
+                    counts[q]++;
+                }
+
+                // Detect D1 (★)
+                if (pub.jcr.includes('★')) counts.D1++;
+            }
+        }
+
+        // Build readable summary
+        const total = Object.values(counts).reduce((a, b) => a + b, 0);
+ 
+        const summary = `
+            <strong>JCR-related Summary:</strong>
+            <span class="q-badge sd1">★ D1: ${counts.D1}</span>
+            <span class="q-badge q1">Q1: ${counts.Q1}</span>
+            <span class="q-badge q2">Q2: ${counts.Q2}</span>
+            <span class="q-badge q3">Q3: ${counts.Q3}</span>
+            <span class="q-badge q4">Q4: ${counts.Q4}</span>
+        `;
+
+        // Display it in the placeholder
+        document.getElementById('quartile-summary').innerHTML = summary;
+    }
+
+    // Call function after data load
+    summarizeQuartiles(allPublications);
+</script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Christian Blum, PhD</h3>
+                    <p class="text-gray-400 mb-4">Senior Research Scientist at IIIA-CSIC, specializing in artificial intelligence, metaheuristics, and optimization algorithms.</p>
+                    <div class="flex space-x-4">
+                        <a target="_blank" href="https://orcid.org/0000-0002-1736-3559" class="text-gray-400 hover:text-green-400 transition-colors"><i class="fab fa-orcid text-xl"></i></a>
+                        <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-google text-xl"></i></a>
+                        <a target="_blank" href="https://www.researchgate.net/profile/Christian_Blum?cp=shp" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-researchgate text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="research.html" class="text-gray-400 hover:text-white transition-colors">Research</a></li>
+                        <li><a href="publications.html" class="text-gray-400 hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="teaching.html" class="text-gray-400 hover:text-white transition-colors">Teaching</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Institution</h4>
+                    <p class="text-gray-400">
+                        Artificial Intelligence Research Institute (IIIA)<br>
+                        Spanish National Research Council (CSIC)<br>
+                        Barcelona, Spain
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-500">&copy; 2024 Christian Blum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
+

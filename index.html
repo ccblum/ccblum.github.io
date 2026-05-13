@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="." />
+    <title>Christian Blum, PhD - AI Research Scientist</title>
+    
+    <script src='https://cdn.tailwindcss.com/3.4.16'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' />
+    <link href='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' />
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">CB</span>
+                    </div>
+                    <span class="font-semibold text-gray-900">Christian Blum</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-blue-600 hover:text-blue-800 transition-colors">Home</a>
+                    <a href="research.html" class="text-gray-700 hover:text-blue-600 transition-colors">Research</a>
+                    <a href="teaching.html" class="text-gray-700 hover:text-blue-600 transition-colors">Teaching</a>
+                    <a href="publications.html" class="text-gray-700 hover:text-blue-600 transition-colors">Publications</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition-colors">Gallery</a>
+		    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-blue-600">Home</a>
+                <a href="research.html" class="block py-2 text-gray-700">Research</a>
+                <a href="teaching.html" class="block py-2 text-gray-700">Teaching</a>
+                <a href="publications.html" class="block py-2 text-gray-700">Publications</a>
+				<a href="gallery.html" class="block py-2 text-gray-700">Gallery</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Christian Blum<span class="text-blue-600">, PhD</span>
+                    </h1>
+                    <div class="space-y-4 text-xl text-gray-700 mb-8">
+                        <p class="flex items-center"><i class="fas fa-user-tie text-blue-600 mr-3"></i>Senior Research Scientist</p>
+                        <p class="flex items-center"><i class="fas fa-building text-blue-600 mr-3"></i>Artificial Intelligence Research Institute (IIIA)</p>
+                        <p class="flex items-center"><i class="fas fa-university text-blue-600 mr-3"></i>Spanish National Research Council (CSIC)</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a target="_blank" href="https://orcid.org/0000-0002-1736-3559" class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full hover:bg-green-200 transition-colors">
+                            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID" class="mr-2">
+                            ORCID Profile
+                        </a>
+                        <a target="_blank" href="./downloads/cblum_cv.pdf" class="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full hover:bg-red-200 transition-colors">
+                            <i class="far fa-file-pdf mr-2"></i>
+                            Download CV
+                        </a>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a target="_blank" href="http://dblp.uni-trier.de/pers/hd/b/Blum_0001:Christian" class="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <i class="fas fa-database"></i>
+                        </a>
+                        <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a target="_blank" href="https://www.researchgate.net/profile/Christian_Blum?cp=shp" class="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full absolute -top-4 -left-4 opacity-20"></div>
+                        <img src="./images/cblum-2017-small.png" alt="Christian Blum" class="w-80 h-80 object-cover rounded-full border-4 border-white shadow-2xl relative z-10">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Recent Recognitions & Achievements</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Recognized among the top 2% most cited scientists globally</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-100 p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">SEIO-BBVA 2021 Award</h3>
+                    <p class="text-gray-700">Best Methodological Contribution in Operations Research</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">World's Top 2% Scientists Ranking (Stanford/Elsevier)</h3>
+		    <p class="text-gray-700">Global Ranking: <strong>rank 29,519</strong> out of 230,332 researchers in the list</p>
+		    <p class="text-gray-700">AI & Image Processing: <strong>rank 616</strong></p>
+		    <p><a target="_blank" href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/8" class="text-blue-600 hover:text-blue-800">(consult the list)</a></p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Scientific Parameters</h3>
+                    <p class="text-gray-700">Citations: <strong>21,563</strong> (Google Scholar)</p>
+                    <p class="text-gray-700">H-index: <strong>47</strong> (Google Scholar)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Latest News</h2>
+                <p class="text-xl text-gray-600">Recent developments and achievements</p>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex items-start space-x-6">
+                        <img src="./images/STNs_Industry_Day_2025_small.png" alt="STN_Industry_Day" class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+                        <div>
+                            <div class="text-blue-600 font-semibold mb-2">November 2025</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Presentation of STNWeb at the AIHub Industry Day</h3>
+                            <p style="margin-bottom: 20px;" class="text-gray-700 leading-relaxed">Camilo Chacón presented <a target="_blank" href="https://www.stn-analytics.com" class="text-blue-600 hover:text-blue-800">STNWeb (3D)</a>, our web-based tool for the 3D visual comparison of multiple runs of multiple optimization algorithms (metaheuristics), at the Industry Day of AIHub in Madrid.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+		<div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex items-start space-x-6">
+                        <img src="./images/toy_example_STNs.png" alt="STNWeb" class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+                        <div>
+                            <div class="text-blue-600 font-semibold mb-2">September 2025</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Launch of STNWeb in 3D</h3>
+                            <p style="margin-bottom: 20px;" class="text-gray-700 leading-relaxed">We launched our new web application <a target="_blank" href="https://www.stn-analytics.com" class="text-blue-600 hover:text-blue-800">STNWeb (3D)</a> for the 3D visual comparison of multiple runs of multiple optimization algorithms (metaheuristics). The web application comes with a tutorial on how to use it. <strong>Feel free to check it out!</strong></p>
+			    <p class="text-gray-700 leading-relaxed"><strong>Note: </strong>The 2D version of STNWeb is still available at <a target="_blank" href="https://github.com/camilochs/stnweb" class="text-blue-600 hover:text-blue-800">here</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex items-start space-x-6">
+                        <img src="./images/EVRPGen_image.jpg" alt="EVRPGen" class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+                        <div>
+                            <div class="text-blue-600 font-semibold mb-2">July 2025</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Launch of EVRPGen</h3>
+                            <p class="text-gray-700 leading-relaxed">We launched a new web application called <a target="_blank" href="http://www.evrp-generator.com/
+" class="text-blue-600 hover:text-blue-800">EVRPGen</a>  for generating realistic problem instances for several electric vehicle routing problems (EVRPs). <strong>Feel free to check it out!</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-microphone text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-blue-600 font-semibold mb-2">July 2025</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Keynote Talk</h3>
+                            <p class="text-gray-700 leading-relaxed">I gave a <strong>keynote talk</strong> on <mark>On the Use of LLMs in Optimization</mark> at <a target="_blank" href="https://eurochinaconference.github.io/ECC2025/" class="text-blue-600 hover:text-blue-800">The 9th Euro-China Conference on Intelligent
+Data Analysis and Applications (ECC 2025)</a> which took place in Ostrava, Czech Republic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-24 h-24 bg-gradient-to-br from-orange-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-microphone text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-blue-600 font-semibold mb-2">February 2025</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Keynote Talk</h3>
+                            <p class="text-gray-700 leading-relaxed">I gave a <strong>keynote talk</strong> on <mark>Understanding the Behavior of Metaheuristics Through Search Trajectory Visualization</mark> at <a target="_blank" href="https://socpros2025.iitr.ac.in/" class="text-blue-600 hover:text-blue-800">13th International Conference on Soft Computing for Problem Solving (SocProS 2025)</a> which took place at IIT Roorkee, India.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Popular Survey Papers</h2>
+                <p class="text-xl text-gray-600">Key publications in metaheuristics and optimization</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up">
+                    <img src="./images/metaheuristics.png" alt="Metaheuristics" class="w-20 h-20 mx-auto mb-4 rounded-lg">
+                    <h3 class="font-bold text-gray-900 mb-2">Metaheuristics</h3>
+                    <a target="_blank" href="./downloads/blum_roli_2003.pdf" class="text-blue-600 hover:text-blue-800 text-sm">Download PDF</a>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./images/hybrid.png" alt="Hybrid Metaheuristics" class="w-20 h-20 mx-auto mb-4 rounded-lg">
+                    <h3 class="font-bold text-gray-900 mb-2">Hybrid Metaheuristics</h3>
+                    <a target="_blank" href="./downloads/HM-blum-et-al-2011.pdf" class="text-blue-600 hover:text-blue-800 text-sm">Download PDF</a>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="./images/starling_1.jpg" alt="Swarm Intelligence" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-gray-900 mb-2">Swarm Intelligence</h3>
+                    <a target="_blank" href="./downloads/SI-blum-gross-2015.pdf" class="text-blue-600 hover:text-blue-800 text-sm">Download PDF</a>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./images/ant.jpg" alt="Ant Colony Optimization" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-gray-900 mb-2">Ant Colony Optimization</h3>
+                    <a target="_blank" href="./downloads/blum_aco_PLR2005.pdf" class="text-blue-600 hover:text-blue-800 text-sm">Download PDF</a>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-yellow-100 p-6 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./images/ACO_bibliometric_review.png" alt="Bibliometric Review on ACO" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-gray-900 mb-2">Bibliometric Review on ACO</h3>
+                    <a target="_blank" href="./downloads/ACO_bibliometric_review_2024.pdf" class="text-blue-600 hover:text-blue-800 text-sm">Download PDF</a>
+                </div>
+		<div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./images/CMSA_logo.png" alt="Survey on CMSA" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-gray-900 mb-2">Survey on CMSA</h3>
+                    <a target="_blank" href="./downloads/book_chapter_CMSA_Handbook_of_Heuristics_2025.pdf" class="text-blue-600 hover:text-blue-800 text-sm">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Authored Books</h2>
+                <p class="text-xl text-gray-600">In case you need a copy of one of the books, contact me! <a href="mailto:christian.blum@iiia.csic.es" class="text-blue-700" style="cursor: pointer;">(<i class="fas fa-envelope text-blue-600 text-lg"></i>)</a></p>
+            </div>
+            <div class="flex justify-center items-center space-x-8">
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up">
+                    <a target="_blank" href="https://link.springer.com/book/10.1007/978-3-031-60103-3">
+                        <img src="./images/CMSA_book_cover.jpeg" alt="CMSA Book" class="w-32 mx-auto mb-4 rounded-lg shadow-lg">
+                    </a>
+                    <p class="text-sm text-gray-600">Springer Publication 2024</p>
+                </div>
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up">
+                    <a target="_blank" href="http://www.springer.com/us/book/9783319308821">
+                        <img src="./images/hm_springer_cover.jpg" alt="Hybrid Metaheuristics Book" class="w-32 mx-auto mb-4 rounded-lg shadow-lg">
+                    </a>
+                    <p class="text-sm text-gray-600">Springer Publication 2016</p>
+                </div>
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <a target="_blank" href="https://onlinelibrary.wiley.com/doi/book/10.1002/9781119136798">
+                        <img src="./images/iste_cover.jpg" alt="ISTE Book" class="w-[7.5rem] mx-auto mb-4 rounded-lg shadow-lg">
+                    </a>
+                    <p class="text-sm text-gray-600">Wiley Publication 2016</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Current Editorial Activities</h2>
+                <p class="text-xl text-gray-600">Serving as area editor, associate editor, or editorial board member</p>
+            </div>
+            <div class="flex justify-center items-center space-x-8">
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up">
+                    <a target="_blank" href="https://www.sciencedirect.com/journal/computers-and-operations-research">
+                        <img src="./images/cor.gif" alt="Computers & Operations Research" class="w-24 mx-auto mb-2 rounded-lg">
+                    </a>
+                </div>
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <a target="_blank" href="https://link.springer.com/journal/12065/editorial-board">
+                        <img src="./images/EvoInt_AE.webp" alt="Evolutionary Intelligence" class="w-24 mx-auto mb-2 rounded-lg">
+                    </a>
+                </div>
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <a target="_blank" href="http://www.springer.com/computer/theoretical+computer+science/journal/11047">
+                        <img src="./images/naco.jpg" alt="Natural Computing" class="w-24 mx-auto mb-2 rounded-lg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-8">Quick Links</h2>
+            <div class="flex justify-center items-center space-x-8">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+                    <i class="fas fa-user-graduate text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">PhD Students</h3>
+                    <p class="mb-4">Information for prospective PhD students</p>
+                    <a href="phd_student_info.html" class="text-blue-200 hover:text-white transition-colors">Learn More →</a>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+                    <i class="fas fa-download text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Resources</h3>
+                    <p class="mb-4">Download problem instances and algorithms</p>
+                    <a href="research.html#Instances" class="text-blue-200 hover:text-white transition-colors">Access Resources →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Christian Blum, PhD</h3>
+                    <p class="text-gray-400 mb-4">Senior Research Scientist at IIIA-CSIC, specializing in artificial intelligence, metaheuristics, and optimization algorithms.</p>
+                    <div class="flex space-x-4">
+                        <a target="_blank" href="https://orcid.org/0000-0002-1736-3559" class="text-gray-400 hover:text-green-400 transition-colors">
+                            <i class="fab fa-orcid text-xl"></i>
+                        </a>
+                        <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fab fa-google text-xl"></i>
+                        </a>
+                        <a target="_blank" href="https://www.researchgate.net/profile/Christian_Blum?cp=shp" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fab fa-researchgate text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="research.html" class="text-gray-400 hover:text-white transition-colors">Research</a></li>
+                        <li><a href="publications.html" class="text-gray-400 hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="teaching.html" class="text-gray-400 hover:text-white transition-colors">Teaching</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Institution</h4>
+                    <p class="text-gray-400">
+                        Artificial Intelligence Research Institute (IIIA)<br>
+                        Spanish National Research Council (CSIC)<br>
+                        Barcelona, Spain
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-500">&copy; 2024 Christian Blum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.remove('border-b');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.add('border-b');
+            }
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('[data-aos]').forEach(el => {
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.transition = 'transform 0.2s ease';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        const cards = document.querySelectorAll('.bg-white.rounded-2xl, .bg-gradient-to-br');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+                this.style.transition = 'all 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '';
+            });
+        });
+    </script>
+
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10685503;
+var sc_invisible=1;
+var sc_security="9ad9a275";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="create counter"
+href="http://statcounter.com/free-hit-counter/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10685503/0/9ad9a275/1/"
+alt="create counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
+
+</body>
+</html>

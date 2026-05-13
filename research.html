@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="." />
+    <title>Research - Christian Blum, PhD</title>
+    
+    <script src='https://cdn.tailwindcss.com/3.4.16'></script>
+    <link href='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">CB</span>
+                    </div>
+                    <a href="index.html" class="font-semibold text-gray-900">Christian Blum</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="research.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 transition-colors">Research</a>
+                    <a href="teaching.html" class="text-gray-700 hover:text-blue-600 transition-colors">Teaching</a>
+                    <a href="publications.html" class="text-gray-700 hover:text-blue-600 transition-colors">Journal Publications</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition-colors">Gallery</a>
+		    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">Contact me</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                <a href="research.html" class="block py-2 text-blue-600 font-semibold">Research</a>
+                <a href="teaching.html" class="block py-2 text-gray-700">Teaching</a>
+                <a href="publications.html" class="block py-2 text-gray-700">Journal Publications</a>
+                <a href="gallery.html" class="block py-2 text-gray-700">Gallery</a>
+		<a href="contact.html" class="block py-2 text-gray-700">Contact me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Page Header -->
+            <header class="text-center mb-12" data-aos="fade-up">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900">Research Focus</h1>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">Exploring swarm intelligence, hybrid metaheuristics, and their real-world applications.</p>
+            </header>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+
+                <!-- Left Sidebar -->
+                <aside class="lg:w-1/4 space-y-8" data-aos="fade-right">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                         <h2 class="text-xl font-bold text-gray-900 mb-4">Menu</h2>
+                         <ul class="space-y-2">
+                             <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Home</a></li>
+                             <li><a href="research.html" class="text-blue-600 font-semibold block">Research</a></li>
+                             <li><a href="teaching.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Teaching</a></li>
+                             <li><a href="publications.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Journal Publications</a></li>
+                             <li><a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Gallery</a></li>
+			     <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors block">Contact me</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <img name="cblum" src="./images/cblum-2017-small.png" width="100" class="rounded-full mx-auto mb-4 border-4 border-blue-100" alt="Christian Blum">
+                        <div class="space-y-4">
+                            <a href="https://orcid.org/0000-0002-1736-3559" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm text-gray-700 hover:text-green-600 transition-colors">
+                                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" class="w-4 h-4 mr-2" alt="ORCID iD icon">
+                                <span>ORCID Profile</span>
+                            </a>
+                            <a target="_blank" href="./downloads/cblum_cv.pdf" class="flex items-center text-sm text-gray-700 hover:text-red-600 transition-colors">
+                                <i class="fas fa-file-pdf w-4 text-center mr-2 text-red-500"></i>
+                                <span>Download CV</span>
+                            </a>
+                            <a target="_blank" href="http://dblp.uni-trier.de/pers/hd/b/Blum_0001:Christian" class="flex items-center text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                               <i class="fas fa-database w-4 text-center mr-2 text-blue-500"></i>
+                                <span>DBLP Entries</span>
+                            </a>
+                            <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="flex items-center text-sm text-gray-700 hover:text-yellow-600 transition-colors">
+                                <i class="fab fa-google w-4 text-center mr-2 text-yellow-500"></i>
+                                <span>Google Scholar</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right Content Area -->
+                <div class="lg:w-3/4" data-aos="fade-left" data-aos-delay="200">
+                    <article class="bg-white p-8 rounded-2xl shadow-lg space-y-8">
+                        
+                        <!-- Research Interests -->
+                        <section>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Research Interests</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">My research interests are twofold. On one side, I am interested in <a href="http://www.springer.com/computer/ai/book/978-3-540-74088-9" target="_blank" class="text-blue-600 hover:underline">Swarm Intelligence</a>, an artificial intelligence discipline inspired by the collective behaviour of social insects, flocks of birds, and fish schools. On the other side, I am also interested in the <a href="http://www.springer.com/engineering/computational+intelligence+and+complexity/book/978-3-540-78294-0" target="_blank" class="text-blue-600 hover:underline">hybridization of metaheuristics</a> with artificial intelligence and operations research methods, such as branch and bound techniques, dynamic programming, and (more recently) <strong>large language models (LLMs)</strong>. Moreover, the graphical comparison and analysis of metaheuristics has gained more and more importance in my groups research objectives during the last years. </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">We design high-performance metaheuristics (and their hybrids) for solving challenging combinatorial optimization problems. Concerning applications, we focus especially on <strong>electric vehicle routing problems</strong> and on <strong>string problems from bioinformatics</strong>. Some of our recent research lines are outlined in more detail below.</p>
+                        </section>
+
+                        <!-- Hybrid Metaheuristics -->
+                        <section>
+                             <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Hybrid Metaheuristics</h2>
+                             <img src="./images/GPT_HM_icon.png" width="180" class="float-right ml-6 mb-4 rounded-lg shadow-md border-2 border-gray-100" alt="Hybrid Metaheuristics Diagram">
+                             <p class="text-gray-700 leading-relaxed mb-4">Hybrid metaheuristics are optimization methods that combine a metaheuristic with other techniques for optimization to exploit their complementary strengths for solving complex problems more effectively. My group has a long history in this line of research. A prime example is <strong>Construct, Merge, Solve, and Adapt (CMSA)</strong>, a hybrid approach that tackles complex problems by iteratively combining solution construction with exact solving techniques. It works in four main steps: first, <emph>Construct</emph>, where multiple partial solutions are generated using heuristic or randomized methods; then Merge, where these partial solutions are integrated into a reduced subproblem that captures promising elements of the search space; next, Solve, where an exact solver (like Integer Linear Programming or Constraint Programming) or a strong heuristic is applied to this reduced subproblem to obtain high-quality solutions; and finally Adapt, where feedback from the solver is used to adjust parameters, refine construction strategies, or update the pool of promising solution components for the next iteration. This cycle continues, balancing exploration and exploitation, and allows CMSA to effectively combine heuristic flexibility with the rigor of exact optimization. </p>
+                        </section>
+
+                        <!-- Search Trajectory Networks -->
+                        <section>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Search Trajectory Networks (STNs)</h2>
+                             <img src="./images/STN_graphic_example.jpg" width="250" class="float-right ml-6 mb-4 rounded-lg shadow-md border-2 border-gray-100" alt="Ants finding food">
+                            <p class="text-gray-700 leading-relaxed mb-4"><strong>Search Trajectory Networks (STNs)</strong> are a visualization technique (developed in cooperation with <a target="_blank" href="https://www.stir.ac.uk/people/257336" class="text-blue-600 hover:text-blue-800">Dr Gabriela Ochoa</a> and <a target="_blank" href="https://www.kmalan.co.za/" class="text-blue-600 hover:text-blue-800">Dr Katherine M. Malan</a>) that maps the search process of optimization algorithms onto a directed graph, where nodes represent visited solutions and edges capture transitions between them, enabling researchers to observe exploration patterns, convergence behavior, and robustness across problem instances. To make this approach more accessible and powerful, <a target="_blank" href="https://www.stn-analytics.com" class="text-blue-600 hover:text-blue-800">STNWeb</a>  was developed as a web-based platform that automates the generation and analysis of STNs, offering a user-friendly interface, advanced partitioning methods, and integrated explainability features (including LLM-based analysis), thereby transforming STNs from a specialized visualization tool into a widely usable platform for interpreting and comparing the behavior of metaheuristics.</p>
+                        </section>
+
+                        <!-- Using LLMs in Metaheuristic Research -->
+                        <section>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Using LLMs in Metaheuristic Research</h2>
+                             
+                            <iframe class="float-right ml-6 mb-4 rounded-lg shadow-md border-2 border-gray-100" width="300" height="200" 
+    src="https://www.youtube.com/embed/U8XQZ7A-PG0" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+
+  <!--<img src="./images/LLM_MH_research_graphic.jpg" width="300" class="float-right ml-6 mb-4 rounded-lg shadow-md border-2 border-gray-100" alt="Ants finding food">-->
+                            <p class="text-gray-700 leading-relaxed mb-4">In recent years we examined two main ways of using LLMs in metaheuristics research: first, as <strong>pattern-recognition engines</strong> for algorithmic improvement, where LLMs are prompted with structured data (e.g., graph metrics and example solutions) or source code to discover heuristics, adjust parameters, and even propose meaningful modifications to metaheuristic implementations—thus boosting performance and making optimization more accessible to non-experts; and second, as interpretability aids, where LLMs are integrated into visualization tools like <a target="_blank" href="https://www.stn-analytics.com" class="text-blue-600 hover:text-blue-800">STNWeb</a> to automatically generate natural-language explanations of search trajectory networks, helping researchers and practitioners better understand, compare, and analyze the behavior of metaheuristics.</p>
+                        </section>
+
+
+                        <!-- EVRP Research -->
+                        <section>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Electric Vehicle Routing</h2>
+                             <img src="./images/girona_instance.png" width="300" class="float-right ml-6 mb-4 rounded-lg shadow-md border-2 border-gray-100" alt="Ants finding food">
+                            <p class="text-gray-700 leading-relaxed mb-4">In recent years we have focused on the modeling and the algorithmic solution of realistic electric vehicle routing variants, especially two-echelon and city-logistics settings, by (1) extending mathematical formulations to include EV-specific constraints (battery limits, partial recharging, time windows, simultaneous pickup-and-delivery and road-junction/road-type contraints), (2) producing benchmark datasets and an EVRP instance generator called <a target="_blank" href="http://www.evrp-generator.com/
+" class="text-blue-600 hover:text-blue-800">EVRPGen</a> to better represent real road networks, and (3) developing and testing tailored metaheuristics (e.g., Variable Neighborhood Search, CMSA/set-covering based approaches and adaptations of CMSA) that produce competitive computational results on these enriched problems.</p>
+                        </section>
+                     
+                        <!-- Problem Instances -->
+                        <section id="Instances">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Problem Instances</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">We frequently generate and provide problem instances for various combinatorial optimization problems to aid experimental evaluation.</p>
+                            <div class="space-y-4">
+                                <details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">Electric VRP with Road Junctions and Road Types</summary>
+                                    <p class="mt-2 text-sm text-gray-600">Instances used in our <a href="https://dx.doi.org/10.2139/ssrn.5497499" target="_blank" class="text-blue-600 hover:underline">2025 paper</a>. <a target="_blank" href="https://doi.org/10.5281/zenodo.17055543" class="font-bold text-blue-600 ml-2">Download <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+				<details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">Group Shop Scheduling (GSS) Problem</summary>
+                                    <p class="mt-2 text-sm text-gray-600">Instances used in our <a href="https://doi.org/10.1023/B:JMMA.0000038614.39977.6f" target="_blank" class="text-blue-600 hover:underline">2003 paper</a>. <a href="./downloads/GSS_instances.tgz" class="font-bold text-blue-600 ml-2">Download <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+                                <details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">K-Cardinality Tree (KCT) Problem</summary>
+                                    <p class="mt-2 text-sm text-gray-600">Instances used in our <a href="https://doi.org/10.1016/j.cor.2003.11.007" target="_blank" class="text-blue-600 hover:underline">2005 paper</a>. <a href="./downloads/KCT_benchmark.tgz" class="font-bold text-blue-600 ml-2">Download <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+                                 <details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">Longest Common Subsequence (LCS) Problem</summary>
+                                    <p class="mt-2 text-sm text-gray-600">Instances used in our <a href="https://doi.org/10.1016/j.cor.2009.02.005" target="_blank" class="text-blue-600 hover:underline">2009 paper</a>. <a href="./downloads/LCS_instances.tgz" class="font-bold text-blue-600 ml-2">Download <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+                                 <details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">Minimum Common String Partition (MCSP)</summary>
+                                    <p class="mt-2 text-sm text-gray-600">Instances from our <a href="https://doi.org/10.1016/j.cor.2015.10.014" target="_blank" class="text-blue-600 hover:underline">2016 paper</a> and <a href="https://doi.org/10.1111/itor.12603" target="_blank" class="text-blue-600 hover:underline">2019 paper</a>. <a href="./downloads/MCSP_instances.tgz" class="font-bold text-blue-600 ml-2">Download Set 1 <i class="fas fa-download text-xs"></i></a> <a href="./downloads/MCSP_large_scale_instances.tgz" class="font-bold text-blue-600 ml-2">Download Set 2 <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+                                <!-- Add more problem instances as needed -->
+                            </div>
+                        </section>
+
+                        <!-- Software -->
+                        <section id="Algorithms">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4 border-t pt-8">Software</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">We occasionally provide C++ code/executables of our optimization software (compiled under Ubuntu 14.04).</p>
+                             <div class="space-y-4">
+                                <details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">CMSA for Maximum Independent Set (MIS)</summary>
+                                    <p class="mt-2 text-sm text-gray-600">Software package including README and instance files. <a href="./downloads/MIS_CMSA.tgz" class="font-bold text-blue-600 ml-2">Download <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+                                <details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">Longest Common Subsequence (LCS) Problem</summary>
+                                    <p class="mt-2 text-sm text-gray-600">Hybrid Ant Colony Approach. <a href="./downloads/LCS_beam_search.tgz" class="font-bold text-blue-600 ml-2">Download <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+                                <details class="bg-gray-50 p-4 rounded-lg">
+                                    <summary class="font-semibold cursor-pointer">Weighted Independent Domination (WIDP)</summary>
+                                    <p class="mt-2 text-sm text-gray-600">PBIG and CMSA algorithms. See README for usage. <a href="./downloads/pbig" class="font-bold text-blue-600 ml-2">PBIG <i class="fas fa-download text-xs"></i></a> <a href="./downloads/cmsa-pbig-wid-v" class="font-bold text-blue-600 ml-2">CMSA <i class="fas fa-download text-xs"></i></a></p>
+                                </details>
+                            </div>
+                        </section>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Christian Blum, PhD</h3>
+                    <p class="text-gray-400 mb-4">Senior Research Scientist at IIIA-CSIC, specializing in artificial intelligence, metaheuristics, and optimization algorithms.</p>
+                    <div class="flex space-x-4">
+                        <a target="_blank" href="https://orcid.org/0000-0002-1736-3559" class="text-gray-400 hover:text-green-400 transition-colors"><i class="fab fa-orcid text-xl"></i></a>
+                        <a target="_blank" href="http://scholar.google.com/citations?user=4e-ykx0AAAAJ&hl=en" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-google text-xl"></i></a>
+                        <a target="_blank" href="https://www.researchgate.net/profile/Christian_Blum?cp=shp" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-researchgate text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="research.html" class="text-gray-400 hover:text-white transition-colors">Research</a></li>
+                        <li><a href="publications.html" class="text-gray-400 hover:text-white transition-colors">Publications</a></li>
+                        <li><a href="teaching.html" class="text-gray-400 hover:text-white transition-colors">Teaching</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Institution</h4>
+                    <p class="text-gray-400">
+                        Artificial Intelligence Research Institute (IIIA)<br>
+                        Spanish National Research Council (CSIC)<br>
+                        Barcelona, Spain
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-500">&copy; 2024 Christian Blum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js'></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
