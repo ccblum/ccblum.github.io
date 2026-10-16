@@ -121,15 +121,23 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-2">SEIO-BBVA 2021 Award</h3>
                     <p class="text-gray-700">Best Methodological Contribution in Operations Research</p>
                 </div>
-                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-robot text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">World's Top 2% Scientists Ranking (Stanford/Elsevier)</h3>
-		    <p class="text-gray-700">Global Ranking: <strong>rank 29,519</strong> out of 230,332 researchers in the list</p>
-		    <p class="text-gray-700">AI & Image Processing: <strong>rank 616</strong></p>
-		    <p><a target="_blank" href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/8" class="text-blue-600 hover:text-blue-800">(consult the list)</a></p>
-                </div>
+				
+<div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
+    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-robot text-white text-2xl"></i>
+    </div>
+    <h3 class="text-xl font-bold text-gray-900 mb-2">World's Top 2% Scientists Ranking (Stanford/Elsevier)</h3>
+    <p class="text-gray-700">Global Ranking: <strong>rank 29,519</strong> out of 230,332 researchers in the list</p>
+    <p class="text-gray-700">AI & Image Processing: <strong>rank 616</strong></p>
+    <p>
+        <a href="images/blum-christian-topscinet-career-long-2026.png"
+           onclick="openCertificate(event)"
+           class="text-blue-600 hover:text-blue-800">
+            (certificate)
+        </a>
+    </p>
+</div>
+				
                 <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-graduation-cap text-white text-2xl"></i>
@@ -488,6 +496,59 @@ alt="create counter"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
 
 
+<!-- Certificate Popup -->
+<div id="certificateModal"
+     class="fixed inset-0 bg-black bg-opacity-75 hidden items-center justify-center z-50 p-4"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Certificate">
+
+    <div class="relative max-w-4xl w-full flex justify-center">
+        <!-- Close button -->
+        <button onclick="closeCertificate()"
+                aria-label="Close certificate"
+                class="absolute -top-10 right-0 text-white text-3xl hover:text-gray-300">
+            &times;
+        </button>
+
+        <!-- Certificate image -->
+        <img src="images/top-certificate.jpg"
+             alt="Stanford Elsevier Top 2% Scientists Certificate"
+             class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl">
+    </div>
+</div>
+
+
+<script>
+function openCertificate(event) {
+    event.preventDefault();
+    const modal = document.getElementById('certificateModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertificate() {
+    const modal = document.getElementById('certificateModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+}
+
+// Close when clicking outside the image
+document.getElementById('certificateModal').addEventListener('click', function(event) {
+    if (event.target === this) {
+        closeCertificate();
+    }
+});
+
+// Close with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeCertificate();
+    }
+});
+</script>
 
 </body>
 </html>
